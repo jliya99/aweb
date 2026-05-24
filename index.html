@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All UI Design</title>
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+nav{
+    background:#222;
+    padding:15px 40px;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+}
+
+.menu li{
+    margin-left:25px;
+}
+
+.menu li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.menu li a:hover{
+    color:#00bfff;
+}
+
+/* PROFILE CARD */
+.profile-section{
+    display:flex;
+    justify-content:center;
+    margin:50px 0;
+}
+
+.profile-card{
+    width:320px;
+    background:white;
+    border:2px solid #ddd;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+.profile-card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.social-links a{
+    text-decoration:none;
+    margin:10px;
+    color:white;
+    background:#007bff;
+    padding:8px 12px;
+    border-radius:5px;
+}
+
+.social-links a:hover{
+    background:#0056b3;
+}
+
+/* LOGIN FORM */
+.login-section{
+    display:flex;
+    justify-content:center;
+    margin:50px 0;
+}
+
+.login-box{
+    width:350px;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.login-box h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.login-box input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+.login-box input:focus{
+    border-color:#007bff;
+    box-shadow:0 0 5px #007bff;
+}
+
+.login-box button{
+    width:100%;
+    padding:12px;
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.login-box button:hover{
+    background:#0056b3;
+}
+
+.forgot{
+    text-align:right;
+    margin-top:10px;
+}
+
+/* GALLERY */
+.gallery-section{
+    padding:40px;
+}
+
+.gallery-section h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.08);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="navbar">
+        <div class="logo">MyWebsite</div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- PROFILE CARD -->
+<div class="profile-section">
+    <div class="profile-card">
+        <img src="WhatsApp Image 2026-05-04 at 9.35.31 PM.jpeg">
+        <h2>Jannatul karima Liya</h2>
+        <p>Web Developer & Designer</p><br>
+        <div class="social-links"><br><br>
+            <a href="#">Facebook</a><br><br>
+            <a href="#">LinkedIn</a><br><br>
+            <a href="#">GitHub</a><br><br>
+        </div>
+    </div>
+</div>
+
+<!-- LOGIN FORM -->
+<div class="login-section">
+    <div class="login-box">
+        <h2>Login</h2>
+        <form>
+            <input type="email" placeholder="Enter Email">
+            <input type="password" placeholder="Enter Password">
+            <button type="submit">Login</button>
+        </form>
+        <div class="forgot">
+            <a href="#">Forgot Password?</a>
+        </div>
+    </div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="gallery-section">
+    <h1>Image Gallery</h1>
+    <div class="gallery">
+        <img src="WhatsApp Image 2026-04-29 at 1.21.45 PM.jpeg">
+        <img src="WhatsApp Image 2026-04-29 at 1.22.20 PM.jpeg">
+        <img src="WhatsApp Image 2026-04-29 at 1.22.54 PM.jpeg">
+        <img src="WhatsApp Image 2026-04-29 at 1.22.56 PM.jpeg">
+        <img src="WhatsApp Image 2026-04-29 at 5.11.16 PM.jpeg">
+        <img src="WhatsApp Image 2026-04-29 at 1.22.56 PM.jpeg">
+    </div>
+</div>
+
+</body>
+</html>
